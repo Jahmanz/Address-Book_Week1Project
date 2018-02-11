@@ -1,0 +1,9 @@
+C:\Users\raide\Desktop\AddressBook\bin\Debug\netcoreapp1.1\Addressbook.deps.json
+C:\Users\raide\Desktop\AddressBook\bin\Debug\netcoreapp1.1\Addressbook.runtimeconfig.json
+C:\Users\raide\Desktop\AddressBook\bin\Debug\netcoreapp1.1\Addressbook.runtimeconfig.dev.json
+C:\Users\raide\Desktop\AddressBook\bin\Debug\netcoreapp1.1\Addressbook.dll
+C:\Users\raide\Desktop\AddressBook\bin\Debug\netcoreapp1.1\Addressbook.pdb
+C:\Users\raide\Desktop\AddressBook\obj\Debug\netcoreapp1.1\Addressbook.csproj.CoreCompileInputs.cache
+C:\Users\raide\Desktop\AddressBook\obj\Debug\netcoreapp1.1\Addressbook.AssemblyInfo.cs
+C:\Users\raide\Desktop\AddressBook\obj\Debug\netcoreapp1.1\Addressbook.dll
+C:\Users\raide\Desktop\AddressBook\obj\Debug\netcoreapp1.1\Addressbook.pdb
