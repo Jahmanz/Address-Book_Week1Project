@@ -29,15 +29,11 @@ namespace AddressBook.Controllers
       [HttpPost("/contacts")]
       public ActionResult Create()
       {
-       string newName = (Request.Form["contact-name"]);
-       string newPhone = (Request.Form["contact-phone"]);
-       string newAddress = (Request.Form["contact-address"]);
+          Contact newContact = new Contact (Request.Form["contact-name"], Request.Form["contact-address"],Request.Form["contact-phone"]);
+          List<Contact> allContacts = Contact.GetAll();
+          return View("Index", allContacts);
+        }
 
-       Contact newContact = new Contact(newName, newPhone, newAddress);
-
-       return View("Index", newContact);
-     }
-       {
         [HttpPost("/contacts/delete")]
         public ActionResult DeleteAll()
         {
@@ -47,4 +43,3 @@ namespace AddressBook.Controllers
 
     }
   }
-}

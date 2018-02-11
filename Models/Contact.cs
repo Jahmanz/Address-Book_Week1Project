@@ -20,12 +20,12 @@ namespace AddressBook.Models
       _id = _instances.Count;
     }
 
-    public string GeName()
+    public string GetName()
     {
       return _name;
     }
 
-    public void SetNamen(string newName)
+    public void SetName(string newName)
     {
       _name = newName;
     }
