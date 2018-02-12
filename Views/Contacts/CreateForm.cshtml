@@ -1,12 +1,18 @@
-
-<h1>AddressBook</h1>
-<h3>Add a new contact:</h3>
-<form action="/contacts" method="post">
-  <label for="contact-name">Name (First and Last)</label>
-  <input id="contact-name" name="contact-name" type="text">
-  <label for="contact-phone">Phone Number</label>
-  <input id="contact-phone" name="contact-phone" type="text">
-  <label for="contact-address">Address</label>
-  <input id="contact-address" name="contact-address" type="text">
-  <button type="submit">Add contact</button>
-</form>
+@{
+  Layout = "_Layout";
+}
+<div class="jumbotron">
+    <center><h1>Address Book</h1></center>
+</div>
+  <div class = "container">
+    <center><h3>Add a new contact:</h3>
+    <form action="/contacts" method="post">
+      <label for="contact-name">Name (First and Last)</label>
+      <input id="contact-name" name="contact-name" type="text">
+      <label for="contact-phone">Phone Number</label>
+      <input id="contact-phone" name="contact-phone" type="text">
+      <label for="contact-address">Address</label>
+      <input id="contact-address" name="contact-address" type="text">
+      <button type="submit">Add contact</button>
+    </form></center>
+  </div>
