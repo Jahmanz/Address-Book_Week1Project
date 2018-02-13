@@ -7,26 +7,26 @@ namespace AddressBook.Controllers
     public class ContactsController : Controller
     {
 
-      [HttpGet("/contacts")]
+      [HttpGet("/")]
       public ActionResult Index()
       {
           List<Contact> allContacts = Contact.GetAll();
           return View(allContacts);
       }
 
-      [HttpGet("/contacts/new")]
+      [HttpGet("/new")]
       public ActionResult CreateForm()
       {
           return View();
       }
-      [HttpGet("/contacts/{id}")]
+      [HttpGet("/{id}")]
         public ActionResult Details(int id)
         {
             Contact contact = Contact.Find(id);
             return View(contact);
         }
 
-      [HttpPost("/contacts")]
+      [HttpPost("/")]
       public ActionResult Create()
       {
           Contact newContact = new Contact (Request.Form["contact-name"], Request.Form["contact-address"],Request.Form["contact-phone"]);
@@ -34,7 +34,7 @@ namespace AddressBook.Controllers
           return View("Index", allContacts);
         }
 
-        [HttpPost("/contacts/delete")]
+        [HttpPost("/delete")]
         public ActionResult DeleteAll()
         {
             Contact.ClearAll();

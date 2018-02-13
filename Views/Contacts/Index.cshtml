@@ -6,7 +6,12 @@
 <ol type="A">
   @foreach (var contact in Model)
   {
-<li><a href="/contacts/@contact.GetId()">@contact.GetName()</a></li>
+<li><a href="/@contact.GetId()">@contact.GetName()</a></li>
 }
 </ol>
-<a href="/contacts/new">Add new contact</a>
+<a href="/new">Add new contact</a>
+<h3>Add a new contact:</h3>
+<form action="/delete" method="post">
+<button type="submit">Delete All Contacts</button>
+</form>
+</div>

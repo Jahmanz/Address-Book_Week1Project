@@ -33,7 +33,7 @@ namespace AddressBook
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Fuck off asshole");
+                await context.Response.WriteAsync("ONE LOVE!");
             });
         }
     }
